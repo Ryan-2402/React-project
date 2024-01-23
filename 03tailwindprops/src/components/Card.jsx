@@ -1,7 +1,7 @@
 
 import React from "react";
 
-function Card({username,btntext="clicked"}) {
+function Card({username,btntext="clicked",age}) {
     
   
   return (
@@ -16,10 +16,10 @@ function Card({username,btntext="clicked"}) {
       <h1 className="text-lg font-semibold text-white">{username}</h1>
       <p className="mt-2 text-sm text-gray-300">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-        debitis?
+        debitis?{age}
       </p>
       <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-black">
-        {btntext} →
+        {btntext} {age} →
       </button>
     </div>
   </div>
